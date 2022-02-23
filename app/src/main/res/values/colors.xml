@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_200">#2759A5</color>
+    <color name="blue_500">#626DAE</color>
+    <color name="primary_dark">#DFDFDF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="bottom_nav_bg">#293160</color>
+    <color name="bottom_nav_default_icon_color">#8E9EFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#ff6f00</color>
+    <color name="gray">#606060</color>
+</resources>

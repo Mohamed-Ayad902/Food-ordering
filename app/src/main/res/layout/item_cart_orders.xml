@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:paddingVertical="@dimen/_8sdp">
+
+
+    <ImageView
+        android:id="@+id/item_cart_type_IV"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:src="@drawable/item_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_cart_productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/font_best_offer"
+        android:gravity="start"
+        android:text="I phone 12 pro max"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="@id/item_cart_type_IV"
+        app:layout_constraintStart_toEndOf="@+id/item_cart_type_IV"
+        app:layout_constraintTop_toTopOf="@id/item_cart_type_IV" />
+
+    <ImageView
+        android:id="@+id/item_cart_price_IV"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:src="@drawable/item_price"
+        app:layout_constraintBottom_toBottomOf="@id/item_cart_productPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_cart_productPrice" />
+
+    <TextView
+        android:id="@+id/item_cart_productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/font_best_offer"
+        android:text="1500"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toEndOf="@id/item_cart_price_IV"
+        app:layout_constraintTop_toBottomOf="@id/item_cart_productName" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/item_cart_productName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_cart_productName">
+
+        <ImageView
+            android:id="@+id/item_cart_btn_minus"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_minus"
+            app:tint="@color/common_google_signin_btn_text_light" />
+
+        <TextView
+            android:id="@+id/item_cart_productQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/font_best_offer"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:id="@+id/item_cart_btn_plus"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_plus" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/item_cart_itemTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_best_offer"
+        android:text="total : 1500"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="@id/item_cart_productPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_cart_productPrice" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_cart_price_IV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

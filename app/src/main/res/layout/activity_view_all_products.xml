@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ViewAllProductsActivity">
+
+
+    <EditText
+        android:id="@+id/view_all_et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/search_bg"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="@dimen/_5sdp"
+        android:drawableTint="#7E7E7E"
+        android:hint="search"
+        android:padding="@dimen/_10sdp"
+        android:textColorHint="#7E7E7E" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/viewAllProducts_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_loading"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading2"
+        app:lottie_speed="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp"
+        android:visibility="gone"
+        app:lottie_loop="false" />
+
+    <TextView
+        android:id="@+id/text_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/font_best_offer"
+        android:gravity="center"
+        android:text="No result found !"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>
